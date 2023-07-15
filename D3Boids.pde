@@ -13,7 +13,7 @@ void setup() {
   world = new World();
   camera = new Camera();
   
-  initBoids(800);
+  initBoids(1200);
   initObjects(150);
   initLight();
   
@@ -67,7 +67,7 @@ void initLight() {
 }
 
 void draw() {
-  background(0, 0, 255);
+  background(0, 0, 0);
   
   object.position.add(0, 0, 0);
   object.rotation.add(0, degToRad(1), 0);
@@ -94,6 +94,7 @@ void draw() {
   popMatrix();
   
   fill (255, 120);
+
   world.display();
 }
 
